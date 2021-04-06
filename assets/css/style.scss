@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+body{
+  background-color: white;
+}
+
 header > h3{
   color: white;
 }
@@ -17,11 +21,17 @@ a{
 }
 
 sup{
-  font-size:small; 
+  font-size:small;
   vertical-align:super;
 }
-sub{  
-  font-size:small; 
+
+sub{
+  font-size:small;
   vertical-align: sub;
 }
-  
+
+body, h1, h2, h3, .header{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
