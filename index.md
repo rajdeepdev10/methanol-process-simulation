@@ -42,9 +42,9 @@ The simulation flowsheet begins with a stream carrying 150 kmol/h of syngas mixe
 | Block name  | Specifications (P/T/vap. frac.)| Other notes |
 |:----------------------:|:-------------:|:-------------:|
 | MIX-101 (Mixer)       | Vapor-liquid  | - |                        
-| REACT (REquil)       | 20 atm/100 C/Vapor-Liquid       |   See Screenshots below for further specification details  |                                
+| REACT (REquil)       | 20 atm/100 °C/Vapor-Liquid       |   See Screenshots below for further specification details  |                                
 | MIX-102 (Mixer)  | Vapor-liquid       |    - |
-| COOL (Heater)  | 10 C/Vapor-Liquid       |    - |
+| COOL (Heater)  | 10 °C/Vapor-Liquid       |    - |
 | SEP (Seperator)  | -       |    - |
 | SPLIT (Splitter)  | Vapor-Liquid       |    See Screenshots below for further specification details  |
 | COLUMN (RadFrac)  | 10 atm       |    See Screenshots below for further specification details  |
