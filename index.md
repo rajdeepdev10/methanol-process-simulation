@@ -20,9 +20,9 @@ This project will focus on the production process of methanol from syngas. Synga
 <!--  CO + H<sub>2</sub>O → CO<sub>2</sub> + H<sub>2</sub> (3)-->
 <!--</div>-->
 
-$$ CO + 2H_{2}\rightarrow CH_{3}OH $$        (1) <br>
-$$ CO_{2} + 3H_{2} \rightarrow CO + H_{2}O $$        (2)<br>
-$$ CO + H_{2}O \rightarrow CO_{2} + H_{2}$$        (3)
+$$ CO + 2H_{2}\rightarrow CH_{3}OH $$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) <br>
+$$ CO_{2} + 3H_{2} \rightarrow CO + H_{2}O $$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)<br>
+$$ CO + H_{2}O \rightarrow CO_{2} + H_{2}$$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)
 
 Reaction 1 and 2 is carbon dioxide and carbon monoxide hydrogenation reaction to methanol. These reactions produce high amounts of crude methanol which is needed to purify by distillation. The operating condition is between 50-100 atm and 250 °C [[3]](/methanol-process-simulation/#references). Reaction 3 is known as “water-gas shift reaction” where carbon monoxide and steam are reacted using a catalyst to produce carbon dioxide and more hydrogen. The products from this reaction are recycled back to the hydrogenation reaction so it can work as reagents. Reaction 1 and 2 is endothermic reaction so low temperature and high pressure is favorable whereas water gas shift reaction is exothermic reaction. Catalysis will be ignored in this process simulation for each of the reactions.
 
