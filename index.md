@@ -129,7 +129,7 @@ The shortcut column is then replaced by distillation column (COLUMN) by to recov
 
 ## References
 
-[1] How Methanol is Made | Methanex Corporation. (n.d.). Methanex. https://www.methanex.com/about-methanol/how-methanol-made#:%7E:text=About%20Methanol,-Overview&text=On%20an%20industrial%20scale%2C%20methanol,water%20soluble%20and%20readily%20biodegradable.
+[1] How Methanol is Made | Methanex Corporation. (n.d.). Methanex. https://www.methanex.com/about-methanol/how-methanol-made
 
 [2] Wikipedia contributors. (2021, January 14). Methanol. Wikipedia. https://en.wikipedia.org/wiki/Methanol#From_synthesis_gas 
 
