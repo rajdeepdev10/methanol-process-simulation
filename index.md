@@ -1,6 +1,6 @@
 # Process Simulation of Methanol Production from Syngas
 
-**Author** : [Rajdeep Dev](https://rajdeepdev10.github.io)
+**Author** : [Rajdeep Dev](https://rajdeepdev10.github.io) <br>
 **UBC ID** : 71666887
 
 
@@ -47,7 +47,7 @@ The simulation flowsheet begins with a stream carrying 150 kmol/h of syngas mixe
 | COOL (Heater)  | 10 C/Vapor-Liquid       |    - |
 | SEP (Seperator)  | -       |    - |
 | SPLIT (Splitter)  | Vapor-Liquid       |    See Screenshots below for further detail  |
-| COLUMN (Radfrac)  | 10 atm       |    See Screenshots below for further detail  |
+| COLUMN (RadFrac)  | 10 atm       |    See Screenshots below for further detail  |
 
 <img src="./assets/images/REACT-spec-window.PNG"><br>
 *Figure 2: REACT Specification Window*
@@ -93,6 +93,46 @@ From the graph, we can conclude that with increase in temperature, the productio
 
 ### Recycle from Seperator
 
+After performing sensitivity analysis, it is determined that the optimal operating conditions for maximum production of methanol is 100 °C and 20 atm which is close to industry standards. The next stage is separating the methanol from product stream, however adding a recycle stream from the product stream results in a higher conversion of syngas to methanol. Figure 9 below shows the process flow diagram without a recycle stream. 
+
+<img src="./assets/images/NO-RECYCLE-FLOWSHEET.PNG"><br>
+*Figure 9: Process Flowsheet without a recycle stream*
+
+From this flowsheet it is ideally desired to have maximum flowrate and mole fraction of methanol in the L-SEP stream, so that it can be recovered in the later step using a distillation column. Figure 10 shows the mole flow and mole fraction of the separator streams without any recycle stream in the flowsheet.  
+
+<img src="./assets/images/NO-RECYCLE-RESULT.PNG"><br>
+*Figure 10: Stream Results without a recycle stream*
+
+As seen in the figure, the vapor stream in the separator (V-SEP) contains a lot of unreacted syngas so it is desired to recycle this stream. Hence, a recycle stream is set up as shown in the process flowsheet.  
+
+The vapor stream from the separator is split into a recycle stream and a purge stream. The splitter has a split fraction 0.1 of the purge stream so that the recycle stream can converge and reach steady state. The default numerical methods in Aspen were selected for this recycle stream to converge. The calculations initially took 7 iterations to reach convergence of the stream. The initial results were then inserted as the initial guess of materials flow in the recycle stream. This recycle stream resulted in a molar flow of 37.31 kmol/h compared to 37.21 kmol/h of methanol without a recycle stream.  
+
+<img src="./assets/images/RECYCLE_RESULT.PNG"><br>
+*Figure 11: Stream Results with a recycle stream*
+
+### Setting up a RadFrac Column
+
+After condensating the methanol rich liquid stream from the flash drum, the final step of the methanol production process is to send the stream to a distillation column, to obtain a pure stream of methanol. Methanol produced from industrial process often typically have a purity of 99.9%. Before setting up a distillation column, we need few information about the column such as the number of stage, ideal feed stage, reflux ratio and distillate to feed ratio. These could be obtained by using a shortcut column (DSTWU) by specifying the light and heavy key recovery shown in Figure 12 below. This gives all the required information for setting up a distillation column. 
+
+<img src="./assets/images/dstwu-spec.PNG"><br>
+*Figure 12: DSTWU Column Specification*
+
+<br><br>
+
+<img src="./assets/images/dstwu-results.PNG"><br>
+*Figure 12: DSTWU Column Results*
+
+The shortcut column is then replaced by distillation column (COLUMN) by to recover pure methanol. This column has a reflux ratio of 0.287454 and distillate to feed ratio of 0.0399777. The number of stages is 15 and ideal feed stage is 5. In this methanol simulation process, 37.3 kmol/h of 0.999997 mol fraction methanol is recovered as bottom product from the distillation column from 150 kmol/h flow of syngas. Figure 13 shows a summary of molar flows and molar fractions of the streams entering and exiting the system boundary of this flowsheet
+
+<img src="./assets/images/final-result.PNG"><br>
+*Figure 13: Molar flowrate and mole fractions of streams in the system boundary*
 
 ## References
 
+[1] How Methanol is Made | Methanex Corporation. (n.d.). Methanex. https://www.methanex.com/about-methanol/how-methanol-made#:%7E:text=About%20Methanol,-Overview&text=On%20an%20industrial%20scale%2C%20methanol,water%20soluble%20and%20readily%20biodegradable.
+
+[2] Wikipedia contributors. (2021, January 14). Methanol. Wikipedia. https://en.wikipedia.org/wiki/Methanol#From_synthesis_gas 
+
+[3] Hydrogen Production: Natural Gas Reforming. (n.d.). Energy.Gov. https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming#:%7E:text=In%20steam%2Dmethane%20reforming%2C%20methane,for%20the%20reaction%20to%20proceed. 
+
+[4] Yang, L. (2016). Biogas and Syngas Upgrading. Advances in Bioenergy, Volume 1. Retrieved April 15, 2021, from https://doi.org/10.1016/bs.aibe.2016.09.003
