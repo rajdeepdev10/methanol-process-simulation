@@ -120,14 +120,14 @@ After condensating the methanol rich liquid stream from the flash drum, the fina
 <br><br>
 
 <img src="./assets/images/dstwu-results.PNG"><br>
-*Figure 12: DSTWU Column Results*
+*Figure 13: DSTWU Column Results*
 
 The shortcut column is then replaced by distillation column (COLUMN) to recover pure methanol. This column has a reflux ratio of 0.287454 and distillate to feed ratio of 0.0399777. The number of stages is 15 and ideal feed stage is 5. 
 
-In this methanol process simulation, 37.3 kmol/h of 0.999997 mol fraction methanol is recovered as bottom product from the distillation column from 150 kmol/h flow of syngas. Figure 13 shows a summary of molar flows and molar fractions of the streams entering and exiting the system boundary of this flowsheet.
+In this methanol process simulation, 37.3 kmol/h of 0.999997 mol fraction methanol is recovered as bottom product from the distillation column from 150 kmol/h flow of syngas. Figure 14 shows a summary of molar flows and molar fractions of the streams entering and exiting the system boundary of this flowsheet.
 
 <img src="./assets/images/final-result.PNG"><br>
-*Figure 13: Molar flowrate and mole fractions of streams in the system boundary*
+*Figure 14: Molar flowrate and mole fractions of streams in the system boundary*
 
 ## References
 
