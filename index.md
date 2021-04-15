@@ -20,7 +20,7 @@ This project will focus on the production process of methanol from syngas. Synga
 <!--  CO + H<sub>2</sub>O → CO<sub>2</sub> + H<sub>2</sub> (3)-->
 <!--</div>-->
 
-$$ CO + 2H_{2}\rightarrow CH_{3}OH $$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) <br>
+$$ CO + 2H_{2}\rightarrow CH_{3}OH $$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) <br>
 $$ CO_{2} + 3H_{2} \rightarrow CH_{3}OH + H_{2}O $$ &nbsp;&nbsp;&nbsp;&nbsp;(2)<br>
 $$ CO + H_{2}O \rightarrow CO_{2} + H_{2}$$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)
 
