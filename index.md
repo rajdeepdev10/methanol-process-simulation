@@ -28,11 +28,28 @@ The simulation flowsheet begins with a stream carrying 150 kmol/h of syngas mixe
 
 ## Operating Conditions
 
+### Feed Streams
+
 | Stream name  | Component(s)| Composition/ Flowrates|P/T/vap. frac.           |
 |:----------------------:|:-------------:|:-------------:|:-------------------:|
 | SYNGAS      | Hydrogen | 0.5 mole fraction (of 150 kmol/h flowrate)  | 25 °C/1 atm                                |
 | SYNGAS      | Carbon Monoxide      |  0.45 mole fraction (of 150 kmol/h flowrate)  | 25 °C/1 atm                                |
 | SYNGAS | Carbon Dioxide     |   0.05 mole fraction (of 150 kmol/h flowrate)  | 25 °C/1 atm                                |
+
+
+### Blocks
+
+| Block name  | Specifications (P/T/vap. frac.)| Other notes |
+|:----------------------:|:-------------:|:-------------:|
+| MIX-101 (Mixer)       | Vapor-liquid  | - |                        
+| REACT (REquil)       | 20 atm/100 C/Vapor-Liquid       |   See Screenshots below for further detail  |                                
+| MIX-102 (Mixer)  | Vapor-liquid       |    - |
+| COOL (Heater)  | 10 C/Vapor-Liquid       |    - |
+| SEP (Seperator)  | -       |    - |
+| SPLIT (Splitter)  | Vapor-Liquid       |    See Screenshots below for further detail  |
+| COLUMN (Radfrac)  | 10 atm       |    See Screenshots below for further detail  |
+
+
 
 ## Analysis and Discussion
 
