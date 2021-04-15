@@ -1,7 +1,7 @@
 # Process Simulation of Methanol Production from Syngas
 <p>
-  <b>Author:</b> <a href="https://rajdeepdev10.github.io">Rajdeep Dev</a> <br>
-  <b>UBC ID:</b> 71666887
+  **Author**: <a href="https://rajdeepdev10.github.io">Rajdeep Dev</a> <br>
+  **UBC ID**: 71666887
 </p>
 
 <img src="./assets/images/cover-image.jpg" alt="chemical plant" width="400">
@@ -49,9 +49,50 @@ The simulation flowsheet begins with a stream carrying 150 kmol/h of syngas mixe
 | SPLIT (Splitter)  | Vapor-Liquid       |    See Screenshots below for further detail  |
 | COLUMN (Radfrac)  | 10 atm       |    See Screenshots below for further detail  |
 
+<img src="./assets/images/REACT-spec-window.PNG"><br>
+*Figure 2: REACT Specification Window*
+
+<br><br>
+
+<img src="./assets/images/REACT-reaction-window.PNG"><br>
+*Figure 3: REACT Reaction Window*
+
+<br><br>
+
+<img src="./assets/images/SPLIT-spec-window.PNG"><br>
+*Figure 4: SPLIT Specification Window*
+
+<br><br>
+
+<img src="./assets/images/radfrac-config.PNG"><br>
+*Figure 5: COLUMN Configuration Window*
+
+<br><br>
+
+<img src="./assets/images/radfrac-streams.PNG"><br>
+*Figure 6: COLUMN Streams Window*
 
 
 ## Analysis and Discussion
+
+### Sensitivity Analysis of Reactor Condition
+
+In this simulation, the amount of methanol produced from this process depends primarily on the conversion of carbon dioxide and carbon monoxide. It is important to perform a sensitivity analysis of this reaction to find the optimum conditions for the highest conversion of carbon dioxide and carbon monoxide. This reaction occurs at a high temperature and pressure, so a high amount of plant cost is used behind maintaining the operation conditions.   
+
+A sensitivity analysis is initially performed at the constant temperature of 25 °C but varying pressure between 1-30 atm. Figure 7 shows a plot of methanol production flowrate at varying pressure. 
+
+<img src="./assets/images/S-ANLYSIS-P.PNG"><br>
+*Figure 7: Methanol Flowrate as a function of Reactor Pressure*
+ 
+As seen in the figure, as the pressure of the reactor increase, methanol production will increase, but the methanol production remains constant after 20 atm so it is suitable reactor pressure to perform the methanol synthesis reaction. After performing sensitivity analysis on reactor pressure, a sensitivity analysis on temperature is performed as well. Figure 8 shows a plot of methanol flowrate as a function of reactor temperature. 
+
+<img src="./assets/images/S-ANLYSIS-T.PNG"><br>
+*Figure 8: Methanol Flowrate as a function of Reactor Temperature*
+
+From the graph, we can conclude that with increase in temperature, the production of methanol with decrease. After 100 °C temperature, the decrease of methanol production is much steeper, so it will be desired to keep the reactor temperature operating at 100 °C. Higher temperatures would ideally increase the reaction rate, but it compromises with the reaction yield. Since rate is not investigated in this simulation, a lower temperature is selected compared to what is typically practiced in the industry.
+
+### Recycle from Seperator
+
 
 ## References
 
