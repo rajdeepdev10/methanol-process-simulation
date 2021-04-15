@@ -1,15 +1,14 @@
 # Process Simulation of Methanol Production from Syngas
 <p>
-  Author: [Rajdeep Dev](https://rajdeepdev10.github.io) <br>
-  UBC ID: 71666887
+  <b>Author:</b> <a href="https://rajdeepdev10.github.io">Rajdeep Dev</a> <br>
+  <b>UBC ID:</b> 71666887
 </p>
 
-<img src="./assets/images/cover-image.jpg" alt="chemical plant" width="400"><br>
-*image_caption*
+<img src="./assets/images/cover-image.jpg" alt="chemical plant" width="400">
 
 ## Process Description
 
-This project will focus on the production process of methanol from syngas. Syngas is a fuel mixture produced from natural gas that consists primarily of hydrogen, carbon monoxide, and carbon dioxide with small amounts of water, nitrogen, and methanol. On an industrial scale, methanol is predominantly produced from the reaction of hydrogen with carbon monoxide and carbon dioxide. The resulting gas mixture is then distilled to create pure methanol [[1]](/methanol-process-simulation/#references). This process is comprised of the following reactions is carried out at varying conditions[[2]](/methanol-process-simulation/#references) 
+This project will focus on the production process of methanol from syngas. Syngas is a fuel mixture produced from natural gas that consists primarily of hydrogen, carbon monoxide, and carbon dioxide with small amounts of water, nitrogen, and methanol. On an industrial scale, methanol is predominantly produced from the reaction of hydrogen with carbon monoxide and carbon dioxide. The resulting gas mixture is then distilled to create pure methanol [[1]](/methanol-process-simulation/#references). This process is comprised of the following reactions is carried out at varying conditions [[2]](/methanol-process-simulation/#references): 
 
 <div align="center">
   CO + 2H<sub>2</sub> → CH<sub>3</sub>OH (1) <br>
@@ -24,9 +23,16 @@ The simulation flowsheet begins with a stream carrying 150 kmol/h of syngas mixe
 
 ## Process Flowsheet
 
-<img src="./assets/images/process-flowsheet.PNG">
+<img src="./assets/images/process-flowsheet.PNG"><br>
+*Figure 1: Aspen Plus Flowsheet for Methanol Production*
 
 ## Operating Conditions
+
+| Stream name  | Component(s)| Composition/ Flowrates|P/T/vap. frac.           |
+|:----------------------:|:-------------:|:-------------:|:-------------------:|
+| SYNGAS      | Hydrogen | 0.5 mole fraction (of 150 kmol/h flowrate)  | 25 °C/1 atm                                |
+| SYNGAS      | Carbon Monoxide      |  0.45 mole fraction (of 150 kmol/h flowrate)  | 25 °C/1 atm                                |
+| SYNGAS | Carbon Dioxide     |   0.05 mole fraction (of 150 kmol/h flowrate)  | 25 °C/1 atm                                |
 
 ## Analysis and Discussion
 
